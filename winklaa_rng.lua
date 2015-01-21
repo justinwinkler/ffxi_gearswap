@@ -20,7 +20,7 @@ function get_sets()
   SW_Index = 1 --Sidewinder
   
   --Default Macro Set for RNG
-  send_command('input /macro book 8;wait .1;input /macro set 5')
+  send_command('input /macro book 9;wait .1;input /macro set 1')
   
   --Binds F10 to update player gear.
   send_command('bind f10 gs c update')
