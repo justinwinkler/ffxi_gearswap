@@ -235,6 +235,5 @@ function equip_song_gear(spell)
 end
 
 function file_unload()
-  send_command('unbind f8')
   send_command('unbind f10')
 end
