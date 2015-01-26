@@ -30,10 +30,10 @@ function get_sets()
   sets.precast.bullet = {ammo="Achiyalabopa Bullet"}
   sets.precast.arrow = {ammo="Achiyal. Arrow"}
   sets.precast.trialsammo = {ammo="Gargouille Arrow"}
---sets.precast['Double Shot'] = {head="Sylvan Gapette +2"} --TODO: Get this.
---sets.precast['Velocity Shot'] = {body="Sylvan Caban +2"} --TODO: Get this.
+  sets.precast['Double Shot'] = {head="Sylvan Gapette +2"}
+  sets.precast['Velocity Shot'] = {body="Sylvan Caban +2"}
   sets.precast['Camouflage'] = {body="Orion Jerkin +1"}  
---sets.precast['Bounty Shot'] = {hands="Syl. Glvltte. +2"} --TODO: Get this.
+  sets.precast['Bounty Shot'] = {hands="Syl. Glvltte. +2"}
 --sets.precast['Sharpshot'] = {legs="Orion Braccae +1"} --TODO: Get this.
   sets.precast['Scavenge'] = {feet="Orion socks +1"}
 --sets.precast['Shadowbind'] = {hands="Orion Bracers +1"} --TODO: Get this.
@@ -54,21 +54,18 @@ function get_sets()
     feet="Orion Socks +1"}
             
   sets.precast.PreShot = {
-    head="Arcadian Beret +1",
+    head="Sylvan Gapette +2",
     neck="Ocachi Gorget",
     ear1="Clearview Earring",
     ear2="Volley Earring",
---  body="Sylvan Caban +2", --TODO: Get this.
-    body="Kyujutsugi",
-    hands="Manihozho Gloves",
+    body="Sylvan Caban +2",
+    hands="Syl. Glvltte. +2",
     ring1="Paqichikaji Ring",
     ring2="Haverton Ring",
     back="Lutian cape",
     waist="Scout's Belt",
---  legs="Nahtirah Trousers", --TODO: Get this.
-    legs="Arcadian Braccae +1",
---  feet="Wurrukatte Boots"} --TODO: Get this.
-    feet="Orion Socks +1"}
+    legs="Nahtirah Trousers",
+    feet="Sylvan Bottln. +2"}
     
   -- Magic Sets Below    
   sets.precast.FastCast = {
