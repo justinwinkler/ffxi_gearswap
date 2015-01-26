@@ -215,6 +215,9 @@ function self_command(cmd)
     midaction(false)
   elseif cmd == 'Melee' then
     equip(sets.aftercast.Engaged)
+  elseif command == 'update' then
+    status_change(player.status)
+    add_to_chat(207,'Update player status...')
   end
 end
 
