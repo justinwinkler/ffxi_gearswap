@@ -142,10 +142,9 @@ function get_sets()
   sets.aftercast = {}
   
   sets.aftercast.PDT = {
-    main="Felibre's Dague",
-    sub="Genbu's Shield",
-    head="Bihu Roundlet +1",
-    body="Bihu Jstcorps +1",
+    main="Terra's Staff",
+    sub="Mephitis Grip",
+    body="Respite Cloak",
     hands="Bihu Cuffs +1",
     legs="Bihu Cannions +1",
     feet="Brioso Slippers +1",
@@ -159,6 +158,21 @@ function get_sets()
     
   sets.aftercast.Idle = sets.aftercast.PDT
   
+  sets.lockstyle = {
+    main="Felibre's Dague",
+    sub="Genbu's Shield",
+    body="Respite Cloak",
+    hands="Bihu Cuffs +1",
+    legs="Bihu Cannions +1",
+    feet="Brioso Slippers +1",
+    neck="Twilight Torque",
+    waist="Yamabuki-no-Obi",
+    left_ear="Ethereal Earring",
+    right_ear="Moonshade Earring",
+    left_ring="Dark Ring",
+    right_ring="Dark Ring",
+    back="Iximulew Cape"}
+
   send_command('input /macro book 3;wait .1;input /macro set 1')
 
   --Binds F10 to update player gear.
@@ -215,7 +229,7 @@ function self_command(cmd)
     midaction(false)
   elseif cmd == 'Melee' then
     equip(sets.aftercast.Engaged)
-  elseif command == 'update' then
+  elseif cmd == 'update' then
     status_change(player.status)
     add_to_chat(207,'Update player status...')
   end

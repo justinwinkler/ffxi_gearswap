@@ -238,7 +238,7 @@ function get_sets()
     feet="Iuitl Gaiters"}
   
   --Idle Sets Below
-  Idle_Set_Names = {'Normal','Regen','Town','Vanity'}
+  Idle_Set_Names = {'Normal','Regen','Town'}
   sets.Idle = {}
   sets.Idle.Normal = {
     head="Arcadian Beret +1",
@@ -277,9 +277,7 @@ function get_sets()
     ring2="Sheltered Ring",
     back="Scuta Cape"})
   
-  --Vanity Set used for the Stylish Addon to /lockstyle on when zoning.
-  --Link: http://forums.windower.net/index.php?/topic/328-any-interest-in-an-auto-lockstyle-on-addon/#entry1808
-  sets.Idle.Vanity = {
+  sets.lockstyle = {
     head="Arcadian Beret +1",
     neck="Iqabi necklace",
     ear1="Clearview Earring",
