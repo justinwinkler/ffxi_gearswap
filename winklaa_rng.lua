@@ -106,7 +106,7 @@ function get_sets()
     ear1="Clearview Earring",
     ear2="Volley Earring",
     body="Kyujutsugi",
-    hands="Manibozho Gloves",
+    hands="Orion Bracers +1",
     ring1="Paqichikaji Ring",
     ring2="Haverton Ring",
     back="Lutian cape",
