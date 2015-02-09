@@ -59,7 +59,7 @@ function get_sets()
     ear1="Clearview Earring",
     ear2="Volley Earring",
     body="Skopos Jerkin",
-    hands="Syl. Glvltte. +2",
+    hands="Manibozho Gloves",
     ring1="Paqichikaji Ring",
     ring2="Haverton Ring",
     back="Lutian cape",
