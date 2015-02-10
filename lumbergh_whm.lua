@@ -31,44 +31,25 @@ function get_sets()
   sets.midcast.Erase = {
     head="Orison Cap +2"}
   
-  sets.midcast.Base = {
+  sets.midcast.Cure = {}
+  
+  sets.aftercast = {}
+  
+  sets.aftercast.PDT = {
     main="Tamaxchi",
-    sub="Sors Shield",
-    head="Gende. Caubeen",
-    body="Orison Bliaud +2",
+    sub="Genbu's Shield",
+    body="Respite Cloak",
     hands="Gendewitha Gages",
-    legs="Orsn. Pantaln. +2",
-    feet="Gende. Galoshes",
-    neck="Orison Locket",
+    legs="Wayfarer Slops",
+    feet="Wayfarer Clogs",
+    neck="Twilight Torque",
     waist="Witful Belt",
     left_ear="Orison Earring",
     right_ear="Graiai Earring",
     left_ring="Weather. Ring",
     right_ring="Ephedra Ring",
     back="Pahtli Cape"}
-  
-  sets.midcast.Cure = {
-    head="Bihu Roundlet +1",
-    body="Gendewith Bilaut",
-    hands="Bihu Cuffs +1",
-    legs="Bihu Cannions +1",
-    feet="Brioso Slippers +1",
-    neck="Twilight Torque",
-    waist="Witful Belt",
-    left_ear="Psystorm Earring",
-    right_ear="Lifestorm Earring",
-    left_ring="Prolix Ring",
-    right_ring="Sangoma Ring",
-    back="Rhapsode's Cape"}
-        
-  sets.aftercast = {}
-  
-  sets.aftercast.PDT = {
-    sub="Genbu's Shield",
-    body="Respite Cloak",
-    legs="Wayfarer Slops",
-    feet="Wayfarer Clogs",
-    neck="Twilight Torque"}
+
     
   sets.aftercast.Idle = sets.aftercast.PDT
   
