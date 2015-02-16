@@ -34,7 +34,7 @@ function get_sets()
   sets.precast['Velocity Shot'] = {body="Sylvan Caban +2"}
   sets.precast['Camouflage'] = {body="Orion Jerkin +1"}  
   sets.precast['Bounty Shot'] = {hands="Syl. Glvltte. +2"}
---sets.precast['Sharpshot'] = {legs="Orion Braccae +1"} --TODO: Get this.
+  sets.precast['Sharpshot'] = {legs="Orion Braccae +1"}
   sets.precast['Scavenge'] = {feet="Orion socks +1"}
   sets.precast['Shadowbind'] = {hands="Orion Bracers +1"}
   
