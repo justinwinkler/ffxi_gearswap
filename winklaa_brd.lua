@@ -152,7 +152,7 @@ function get_sets()
     waist="Yamabuki-no-Obi",
     left_ear="Ethereal Earring",
     right_ear="Moonshade Earring",
-    left_ring="Dark Ring",
+    left_ring="Patricius Ring",
     right_ring="Dark Ring",
     back="Iximulew Cape"}
     
@@ -169,7 +169,7 @@ function get_sets()
     waist="Yamabuki-no-Obi",
     left_ear="Ethereal Earring",
     right_ear="Moonshade Earring",
-    left_ring="Dark Ring",
+    left_ring="Patricius Ring",
     right_ring="Dark Ring",
     back="Iximulew Cape"}
 
