@@ -49,7 +49,7 @@ function get_sets()
     ring1="Paqichikaji Ring",
     ring2="Haverton Ring",
     back="Lutian cape",
-    waist="Scout's Belt",
+    waist="Elanid Belt",
     legs="Arcadian Braccae +1",
     feet="Orion Socks +1"}
             
@@ -93,7 +93,7 @@ function get_sets()
     ring1="Paqichikaji Ring",
     ring2="Haverton Ring",
     back="Lutian cape",
-    waist="Scout's Belt",
+    waist="Elanid Belt",
     legs="Arcadian Braccae +1",
     feet="Orion Socks +1"}
 
@@ -110,7 +110,7 @@ function get_sets()
     ring1="Paqichikaji Ring",
     ring2="Haverton Ring",
     back="Lutian cape",
-    waist="Scout's Belt",
+    waist="Elanid Belt",
     legs="Arcadian Braccae +1",
     feet="Orion Socks +1"}
   
@@ -205,7 +205,7 @@ function get_sets()
     ring1="Paqichikaji Ring",
     ring2="Haverton Ring",
     back="Lutian cape",
-    waist="Scout's Belt",
+    waist="Elanid Belt",
     legs="Arcadian Braccae +1",
     feet="Orion Socks +1"}
     
@@ -250,7 +250,7 @@ function get_sets()
     ring1="Paqichikaji Ring",
     ring2="Haverton Ring",
     back="Lutian cape",
-    waist="Scout's Belt",
+    waist="Elanid Belt",
     legs="Arcadian Braccae +1",
     feet="Orion Socks +1"}
             
@@ -264,7 +264,7 @@ function get_sets()
     ring1="Paqichikaji Ring",
     ring2="Haverton Ring",
     back="Lutian cape",
-    waist="Scout's Belt",
+    waist="Elanid Belt",
     legs="Arcadian Braccae +1",
     feet="Orion Socks +1"}
         
