@@ -44,7 +44,7 @@ function get_sets()
     
   sets.precast.Cure = {
     head="Nahtirah Hat",
-    body="Marduk's Jubbah +1",
+    body="Gendewitha Bliaut",
     hands="Gende. Gages+1",
     legs="Orvail Pants",
     feet="Brioso Slippers +1",
