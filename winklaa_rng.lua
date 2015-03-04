@@ -119,7 +119,7 @@ function get_sets()
   sets.Coronach = {}
   sets.Coronach.Normal = {    
     head="Arcadian Beret +1",
-    neck="Breeze Gorget",
+    neck="Fotia Gorget",
     ear1="Clearview Earring",
     ear2="Volley Earring",
     body="Kyujutsugi",
@@ -127,7 +127,7 @@ function get_sets()
     ring1="Paqichikaji Ring",
     ring2="Haverton Ring",
     back="Lutian cape",
-    waist="Breeze Belt",
+    waist="Fotia Belt",
     legs="Arcadian Braccae +1",
     feet="Orion Socks +1"}
   
@@ -136,7 +136,7 @@ function get_sets()
   sets.LS = {}
   sets.LS.Normal = {
     head="Arcadian Beret +1",
-    neck="Light Gorget",
+    neck="Fotia Gorget",
     ear1="Clearview Earring",
     ear2="Volley Earring",
     body="Kyujutsugi",
@@ -144,7 +144,7 @@ function get_sets()
     ring1="Paqichikaji Ring",
     ring2="Haverton Ring",
     back="Lutian cape",
-    waist="Light Belt",
+    waist="Fotia Belt",
     legs="Arcadian Braccae +1",
     feet="Orion Socks +1"}
   
@@ -163,7 +163,7 @@ function get_sets()
   sets.JR = {}
   sets.JR.Normal = {
     head="Arcadian Beret +1",
-    neck="Light Gorget",
+    neck="Fotia Gorget",
     ear1="Clearview Earring",
     ear2="Volley Earring",
     body="Kyujutsugi",
@@ -171,7 +171,7 @@ function get_sets()
     ring1="Paqichikaji Ring",
     ring2="Haverton Ring",
     back="Lutian cape",
-    waist="Light Belt",
+    waist="Fotia Belt",
     legs="Arcadian Braccae +1",
     feet="Orion Socks +1"}
   
@@ -180,7 +180,7 @@ function get_sets()
   sets.SW = {}
   sets.SW.Normal = {
     head="Arcadian Beret +1",
-    neck="Light Gorget",
+    neck="Fotia Gorget",
     ear1="Clearview Earring",
     ear2="Volley Earring",
     body="Kyujutsugi",
@@ -188,7 +188,7 @@ function get_sets()
     ring1="Paqichikaji Ring",
     ring2="Haverton Ring",
     back="Lutian cape",
-    waist="Light Belt",
+    waist="Fotia Belt",
     legs="Arcadian Braccae +1",
     feet="Orion Socks +1"}
   
