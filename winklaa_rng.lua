@@ -58,7 +58,7 @@ function get_sets()
     neck="Ocachi Gorget",
     ear1="Clearview Earring",
     ear2="Volley Earring",
-    body="Skopos Jerkin",
+    body="Sylvan Caban +2",
     hands="Manibozho Gloves",
     ring1="Paqichikaji Ring",
     ring2="Haverton Ring",
