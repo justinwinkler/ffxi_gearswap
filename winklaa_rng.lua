@@ -65,7 +65,7 @@ function get_sets()
     back="Lutian cape",
     waist="Impulse Belt",
     legs="Nahtirah Trousers",
-    feet="Sylvan Bottln. +2"}
+    feet="Wurrukatte Boots"}
     
   -- Magic Sets Below    
   sets.precast.FastCast = {
