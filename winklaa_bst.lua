@@ -610,6 +610,17 @@ function job_handle_equipping_gear(playerStatus, eventArgs)
 	end
 end
 
+function status_change(new,old)
+  equip(sets.idle) 
+end
+
+function self_command(command)
+  if command == 'update' then
+    status_change(player.status)
+    add_to_chat(207,'Update player status...')
+  end
+end
+
 -- Called by the 'update' self-command, for common needs.
 -- Set eventArgs.handled to true if we don't want automatic equipping of gear.
 function job_update(cmdParams, eventArgs)
