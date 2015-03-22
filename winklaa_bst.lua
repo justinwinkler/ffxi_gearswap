@@ -93,9 +93,9 @@ function init_gear_sets()
 		body="Ankusa Jackcoat +1",hands="Sombra Mittens +1",ring1="Perception Ring",ring2="Sangoma Ring",
 		back="Aput Mantle +1",waist="Salire Belt",legs="Iuitl Tights +1",feet="Scamp's Sollerets"}
 
-	sets.precast.JA.Reward = {
+	sets.precast.JA.Reward = {main="Zoraal Ja's Axe", sub="Zoraal Ja's Axe",
                 head="Stout Bonnet",neck="Aife's Medal",ear1="Ferine Earring",ear2="Lifestorm Earring",
-		body="Totemic Jackcoat +1",hands="Totemic Gloves +1",ring1="Leviathan's Ring +1",ring2="Leviathan's Ring +1",
+		body="Totemic Jackcoat +1",hands="Ogre Gloves +1",ring1="Leviathan's Ring +1",ring2="Leviathan's Ring +1",
 		back="Pastoralist's Mantle",waist="Salire Belt",legs="Ankusa Trousers +1",feet="Mst. Gaiters +2"}
 
 	sets.precast.JA.Charm = {ammo="Tsar's Egg",
@@ -203,7 +203,7 @@ function init_gear_sets()
 	sets.precast.WS['Cloudsplitter'] = set_combine(sets.precast.WS['Primal Rend'], {waist="Thunder Belt"})
 
 	-- PET SIC & READY MOVES
-	sets.midcast.Pet.WS = {sub="Hunahpu", ammo="Demonry Core",
+	sets.midcast.Pet.WS = {main="Izizoeksi", sub="Hunahpu", ammo="Demonry Core",
 		neck="Ferine Necklace",ear1="Sabong Earring",ear2="Domesticator's Earring",
 		body="Mirke Wardecors",hands="Regimen Mittens",ring1="Angel's Ring",ring2="Angel's Ring",
 		back="Pastoralist's Mantle",waist="Hurch'lan Sash",legs="Desultor Tassets",feet="Totemic Gaiters +1"}
@@ -216,7 +216,7 @@ function init_gear_sets()
 	sets.midcast.Pet.Neutral = {head="Totemic Helm +1"}
 	sets.midcast.Pet.Favorable = {head="Ferine Cabasset +2"}
 	sets.midcast.Pet.TPBonus = {hands="Ferine Manoplas +2"}
-	sets.midcast.Pet.ReadyRecast = {sub="Charmer's Merlin",legs="Desultor Tassets"}
+	sets.midcast.Pet.ReadyRecast = {main="Izizoeksi", sub="Charmer's Merlin",legs="Desultor Tassets"}
 
         -- RESTING
         sets.resting = {}
