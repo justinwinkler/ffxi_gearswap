@@ -226,23 +226,23 @@ function init_gear_sets()
 	sets.WaterRegen = {ear2="Hibernation Earring"}
 
         sets.idle = {main="Izizoeksi", sub="Hunahpu", ammo="Demonry Core",
-		head="Twilight Helm",neck="Wiglen Gorget",ear1="Dawn Earring",ear2="Merman's Earring",
-		body="Kumarbi's Akar",hands="Iuitl Wristbands +1",ring1="Paguroidea Ring",ring2="Sheltered Ring",
-		back="Repulse Mantle",waist="Lycopodium Sash",legs="Iuitl Tights +1",feet="Iuitl Gaiters +1"}
+		head="Anwig Salade",neck="Ferine Necklace",ear1="Sabong Earring",ear2="Ferine Earring",
+		body="Acro Surcoat",hands="Acro Gauntlets",ring1="Dark Ring",ring2="Patricius Ring",
+		back="Pastoralist's Mantle",waist="Hurch'lan Sash",legs="Ferine Quijotes +2",feet="Acro Leggings"}
 
         sets.idle.Refresh = set_combine(sets.idle, {head="Wivre Hairpin",body="Twilight Mail",hands="Ogier's Gauntlets",
                 legs="Stearc Subligar",feet="Ogier's Leggings"})
 	sets.idle.Reraise = set_combine(sets.idle, {head="Twilight Helm",body="Twilight Mail"})
 
 	sets.idle.Pet = set_combine(sets.idle, {ammo="Demonry Core",
-		head="Twilight Helm",neck="Wiglen Gorget",ear1="Dawn Earring",ear2="Handler's Earring +1",
-		body="Kirin's Osode",hands="Ankusa Gloves +1",ring1="Paguroidea Ring",ring2="Sheltered Ring",
-		back="Oneiros Cappa",waist="Isa Belt",legs="Ferine Quijotes +2",feet="Armada Sollerets"})
+		head="Anwig Salade",neck="Ferine Necklace",ear1="Sabong Earring",ear2="Ferine Earring",
+		body="Acro Surcoat",hands="Acro Gauntlets",ring1="Dark Ring",ring2="Patricius Ring",
+		back="Pastoralist's Mantle",waist="Hurch'lan Sash",legs="Ferine Quijotes +2",feet="Acro Leggings"})
 
 	sets.idle.Pet.Engaged = {ammo="Demonry Core",
-		head="Anwig Salade",neck="Ferine Necklace",ear1="Rimeice Earring",ear2="Domesticator's Earring",
-		body="Ankusa Jackcoat +1",hands="Regimen Mittens",ring1="Dark Ring",ring2="Defending Ring",
-		back="Ferine Mantle",waist="Hurch'lan Sash",legs="Wisent Kecks",feet="Armada Sollerets"}
+		head="Anwig Salade",neck="Ferine Necklace",ear1="Sabong Earring",ear2="Ferine Earring",
+		body="Acro Surcoat",hands="Acro Gauntlets",ring1="Dark Ring",ring2="Patricius Ring",
+		back="Pastoralist's Mantle",waist="Hurch'lan Sash",legs="Ferine Quijotes +2",feet="Acro Leggings"}
         
         -- DEFENSE SETS
 	sets.defense.PDT = {head="Ighwa Cap",neck="Twilight Torque",
