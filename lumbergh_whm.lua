@@ -23,7 +23,8 @@ function get_sets()
     right_ear="Graiai Earring",
     left_ring="Weather. Ring",
     right_ring="Ephedra Ring",
-    back="Pahtli Cape"}
+    back="Pahtli Cape",
+    ammo="Incantor Stone"}
     
   -- Midcast Sets
   sets.midcast = {}
@@ -48,8 +49,8 @@ function get_sets()
     right_ear="Graiai Earring",
     left_ring="Weather. Ring",
     right_ring="Ephedra Ring",
-    back="Pahtli Cape"}
-
+    back="Pahtli Cape",
+    ammo="Incantor Stone"}
     
   sets.aftercast.Idle = sets.aftercast.PDT
   
@@ -67,7 +68,8 @@ function get_sets()
     right_ear="Graiai Earring",
     left_ring="Weather. Ring",
     right_ring="Ephedra Ring",
-    back="Pahtli Cape"}
+    back="Pahtli Cape",
+    ammo="Incantor Stone"}
 
   send_command('input /macro book 1;wait .1;input /macro set 1')
 
