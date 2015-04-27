@@ -31,7 +31,7 @@ function get_sets()
   sets.precast.arrow = {ammo="Achiyal. Arrow"}
   sets.precast.trialsammo = {ammo="Gargouille Arrow"}
   sets.precast['Double Shot'] = {head="Amini Gapette"}
-  sets.precast['Velocity Shot'] = {body="Sylvan Caban +2"}
+  sets.precast['Velocity Shot'] = {body="Amini Caban"}
   sets.precast['Camouflage'] = {body="Orion Jerkin +1"}  
   sets.precast['Bounty Shot'] = {hands="Syl. Glvltte. +2"}
   sets.precast['Sharpshot'] = {legs="Orion Braccae +1"}
@@ -58,7 +58,7 @@ function get_sets()
     neck="Ocachi Gorget",
     ear1="Clearview Earring",
     ear2="Volley Earring",
-    body="Sylvan Caban +2",
+    body="Amini Caban",
     hands="Iuitl Wristbands",
     ring1="Paqichikaji Ring",
     ring2="Haverton Ring",
