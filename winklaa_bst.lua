@@ -82,7 +82,7 @@ end
 function init_gear_sets()
 	-- PRECAST SETS
         sets.precast.JA['Killer Instinct'] = {head="Ankusa Helm +1"}
-	sets.precast.JA['Bestial Loyalty'] = {hands="Ankusa Gloves +1"}
+	sets.precast.JA['Bestial Loyalty'] = {hands="Mst. Gloves +2"}
 	sets.precast.JA['Call Beast'] = sets.precast.JA['Bestial Loyalty']
         sets.precast.JA.Familiar = {legs="Ankusa Trousers +1"}
 	sets.precast.JA.Tame = {head="Totemic Helm +1",ear1="Tamer's Earring",legs="Stout Kecks"}
@@ -203,7 +203,8 @@ function init_gear_sets()
 	sets.precast.WS['Cloudsplitter'] = set_combine(sets.precast.WS['Primal Rend'], {waist="Thunder Belt"})
 
 	-- PET SIC & READY MOVES
-	sets.midcast.Pet.WS = {main="Izizoeksi", sub="Hunahpu", ammo="Demonry Core",
+	sets.midcast.Pet.WS = {main="Kumbhakarna", sub="Izizoeksi", ammo="Demonry Core",
+	        head="Acro Helm",
 		neck="Ferine Necklace",ear1="Sabong Earring",ear2="Domesticator's Earring",
 		body="Mirke Wardecors",hands="Regimen Mittens",ring1="Angel's Ring",ring2="Angel's Ring",
 		back="Pastoralist's Mantle",waist="Hurch'lan Sash",legs="Desultor Tassets",feet="Totemic Gaiters +1"}
@@ -216,7 +217,7 @@ function init_gear_sets()
 	sets.midcast.Pet.Neutral = {head="Totemic Helm +1"}
 	sets.midcast.Pet.Favorable = {head="Ferine Cabasset +2"}
 	sets.midcast.Pet.TPBonus = {hands="Ferine Manoplas +2"}
-	sets.midcast.Pet.ReadyRecast = {main="Izizoeksi", sub="Charmer's Merlin",legs="Desultor Tassets"}
+	sets.midcast.Pet.ReadyRecast = {main="Kumbhakarna", sub="Charmer's Merlin",legs="Desultor Tassets"}
 
         -- RESTING
         sets.resting = {}
@@ -225,7 +226,7 @@ function init_gear_sets()
 	sets.ExtraRegen = {waist="Muscle Belt +1"}
 	sets.WaterRegen = {ear2="Hibernation Earring"}
 
-        sets.idle = {main="Izizoeksi", sub="Hunahpu", ammo="Demonry Core",
+        sets.idle = {main="Kumbhakarna", sub="Izizoeksi", ammo="Demonry Core",
 		head="Anwig Salade",neck="Ferine Necklace",ear1="Sabong Earring",ear2="Ferine Earring",
 		body="Acro Surcoat",hands="Acro Gauntlets",ring1="Dark Ring",ring2="Patricius Ring",
 		back="Pastoralist's Mantle",waist="Hurch'lan Sash",legs="Ferine Quijotes +2",feet="Acro Leggings"}
