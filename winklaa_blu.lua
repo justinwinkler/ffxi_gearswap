@@ -442,6 +442,8 @@ function job_post_midcast(spell, action, spellMap, eventArgs)
         if spellMap == 'Healing' and spell.target.type == 'SELF' and sets.self_healing then
             equip(sets.self_healing)
         end
+    elseif spell.skill == 'Elemental Magic' then
+      equip(sets.midcast['Blue Magic'].Magical)
     end
 
     -- If in learning mode, keep on gear intended to help with that, regardless of action.
