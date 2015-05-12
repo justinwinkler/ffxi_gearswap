@@ -54,7 +54,7 @@ function get_sets()
     feet="Orion Socks +1"}
             
   sets.precast.PreShot = {
-    head="Amini Gapette",
+    head="Amini Gapette +1",
     neck="Ocachi Gorget",
     ear1="Clearview Earring",
     ear2="Volley Earring",
