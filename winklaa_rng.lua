@@ -43,7 +43,7 @@ function get_sets()
     neck="Ocachi Gorget",
     ear1="Enervating Earring",
     ear2="Volley Earring",
-    body="Orion Jerkin +1",
+    body="Amini Caban +1",
     hands="Manibozho Gloves",
     ring1="Paqichikaji Ring",
     ring2="Haverton Ring",
@@ -80,14 +80,14 @@ function get_sets()
   sets.precast.Utsusemi = set_combine(sets.precast.FastCast,{neck="Magoraga Beads"})    
             
   --Midshot Sets Below
-  Midshot_Set_Names = {'Normal'}
+  Midshot_Set_Names = {'Normal','RAcc','MaxRAcc'}
   sets.Midshot = {}
   sets.Midshot.Normal = {
     head="Arcadian Beret +1",
     neck="Ocachi Gorget",
     ear1="Enervating Earring",
     ear2="Volley Earring",
-    body="Orion Jerkin +1",
+    body="Amini Caban +1",
     hands="Manibozho Gloves",
     ring1="Paqichikaji Ring",
     ring2="Haverton Ring",
@@ -95,23 +95,19 @@ function get_sets()
     waist="Elanid Belt",
     legs="Arcadian Braccae +1",
     feet="Amini Bottillons +1"}
+  sets.Midshot.RAcc = set_combine(sets.Midshot.Normal,{
+    neck="Ej Necklace",
+    hands="Sigyn's Bazubands"
+  })
+  sets.Midshot.MaxRAcc = set_combine(sets.Midshot.RAcc,{
+    head="Amini Gapette +1"
+  })
+    
 
   --Barrage Sets Below
   Barrage_Set_Names = {'Normal'}
   sets.Barrage = {}
-  sets.Barrage.Normal = {
-    head="Arcadian Beret +1",
-    neck="Ocachi Gorget",
-    ear1="Enervating Earring",
-    ear2="Volley Earring",
-    body="Orion Jerkin +1",
-    hands="Orion Bracers +1",
-    ring1="Paqichikaji Ring",
-    ring2="Haverton Ring",
-    back="Lutian cape",
-    waist="Elanid Belt",
-    legs="Arcadian Braccae +1",
-    feet="Amini Bottillons +1"}
+  sets.Barrage.Normal = sets.Midshot.Normal
   
   -- Coronach Sets Below
   Coronach_Set_Names = {'Normal'}
@@ -121,7 +117,7 @@ function get_sets()
     neck="Fotia Gorget",
     ear1="Enervating Earring",
     ear2="Volley Earring",
-    body="Orion Jerkin +1",
+    body="Amini Caban +1",
     hands="Manibozho Gloves",
     ring1="Paqichikaji Ring",
     ring2="Haverton Ring",
@@ -138,7 +134,7 @@ function get_sets()
     neck="Fotia Gorget",
     ear1="Enervating Earring",
     ear2="Volley Earring",
-    body="Orion Jerkin +1",
+    body="Amini Caban +1",
     hands="Manibozho Gloves",
     ring1="Paqichikaji Ring",
     ring2="Haverton Ring",
@@ -165,7 +161,7 @@ function get_sets()
     neck="Fotia Gorget",
     ear1="Enervating Earring",
     ear2="Volley Earring",
-    body="Orion Jerkin +1",
+    body="Amini Caban +1",
     hands="Manibozho Gloves",
     ring1="Paqichikaji Ring",
     ring2="Haverton Ring",
@@ -182,7 +178,7 @@ function get_sets()
     neck="Fotia Gorget",
     ear1="Enervating Earring",
     ear2="Volley Earring",
-    body="Orion Jerkin +1",
+    body="Amini Caban +1",
     hands="Manibozho Gloves",
     ring1="Paqichikaji Ring",
     ring2="Haverton Ring",
@@ -199,7 +195,7 @@ function get_sets()
     neck="Ocachi Gorget",
     ear1="Enervating Earring",
     ear2="Volley Earring",
-    body="Orion Jerkin +1",
+    body="Amini Caban +1",
     hands="Manibozho Gloves",
     ring1="Paqichikaji Ring",
     ring2="Haverton Ring",
@@ -213,7 +209,7 @@ function get_sets()
     neck="Huani collar",
     ear1="Merman's Earring",
     ear2="Merman's Earring",
-    body="Orion Jerkin +1",
+    body="Amini Caban +1",
     hands="Manibozho Gloves",
     ring1="Hajduk ring",
     ring2="Paqichikaji Ring",
@@ -227,7 +223,7 @@ function get_sets()
     neck="Twilight Torque",
     ear1="Enervating Earring",
     ear2="Volley Earring",
-    body="Orion Jerkin +1",
+    body="Amini Caban +1",
     hands="Iuitl Wristbands",
     ring1="Dark Ring",
     ring2="Dark Ring",
@@ -244,7 +240,7 @@ function get_sets()
     neck="Ocachi Gorget",
     ear1="Enervating Earring",
     ear2="Volley Earring",
-    body="Orion Jerkin +1",
+    body="Amini Caban +1",
     hands="Manibozho Gloves",
     ring1="Paqichikaji Ring",
     ring2="Haverton Ring",
@@ -258,7 +254,7 @@ function get_sets()
     neck="Ocachi Gorget",
     ear1="Enervating Earring",
     ear2="Volley Earring",
-    body="Orion Jerkin +1",
+    body="Amini Caban +1",
     hands="Manibozho Gloves",
     ring1="Paqichikaji Ring",
     ring2="Haverton Ring",
@@ -281,7 +277,7 @@ function get_sets()
     neck="Iqabi necklace",
     ear1="Enervating Earring",
     ear2="Volley Earring",
-    body="Orion Jerkin +1",
+    body="Amini Caban +1",
     hands="Orion Bracers +1",
     ring1="Hajduk ring",
     ring2="Paqichikaji Ring",
@@ -299,7 +295,7 @@ function get_sets()
     neck="Twilight Torque",
     ear1="Enervating Earring",
     ear2="Volley Earring",
-    body="Orion Jerkin +1",
+    body="Amini Caban +1",
     hands="Iuitl Wristbands",
     ring1="Dark Ring",
     ring2="Dark Ring",
@@ -316,7 +312,7 @@ function get_sets()
   mdt.on = set_combine(pdt.on,{    
     ear1="Merman's Earring",
     ear2="Merman's Earring",
-    body="Orion Jerkin +1",    
+    body="Amini Caban +1",    
     back="Tuilha Cape",
     waist="Resolute Belt"})
   mdt.off = {}  
