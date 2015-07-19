@@ -35,28 +35,27 @@ function get_sets()
   sets.precast['Camouflage'] = {body="Orion Jerkin +1"}  
   sets.precast['Bounty Shot'] = {hands="Syl. Glvltte. +2"}
   sets.precast['Sharpshot'] = {legs="Orion Braccae +1"}
-  sets.precast['Scavenge'] = {feet="Orion socks +1"}
+  sets.precast['Scavenge'] = {feet="Orion Socks +1"}
   sets.precast['Shadowbind'] = {hands="Orion Bracers +1"}
   
   sets.precast['Eagle Eye Shot'] = {
     head="Arcadian Beret +1",
-    body="Kyujutsugi",
     neck="Ocachi Gorget",
-    ear1="Clearview Earring",
+    ear1="Enervating Earring",
     ear2="Volley Earring",
-    body="Kyujutsugi",
+    body="Orion Jerkin +1",
     hands="Manibozho Gloves",
     ring1="Paqichikaji Ring",
     ring2="Haverton Ring",
     back="Lutian cape",
     waist="Elanid Belt",
     legs="Arcadian Braccae +1",
-    feet="Orion Socks +1"}
+    feet="Amini Bottillons +1"}
             
   sets.precast.PreShot = {
     head="Amini Gapette +1",
     neck="Ocachi Gorget",
-    ear1="Clearview Earring",
+    ear1="Enervating Earring",
     ear2="Volley Earring",
     body="Amini Caban +1",
     hands="Iuitl Wristbands",
@@ -86,16 +85,16 @@ function get_sets()
   sets.Midshot.Normal = {
     head="Arcadian Beret +1",
     neck="Ocachi Gorget",
-    ear1="Clearview Earring",
+    ear1="Enervating Earring",
     ear2="Volley Earring",
-    body="Kyujutsugi",
+    body="Orion Jerkin +1",
     hands="Manibozho Gloves",
     ring1="Paqichikaji Ring",
     ring2="Haverton Ring",
     back="Lutian cape",
     waist="Elanid Belt",
     legs="Arcadian Braccae +1",
-    feet="Orion Socks +1"}
+    feet="Amini Bottillons +1"}
 
   --Barrage Sets Below
   Barrage_Set_Names = {'Normal'}
@@ -103,16 +102,16 @@ function get_sets()
   sets.Barrage.Normal = {
     head="Arcadian Beret +1",
     neck="Ocachi Gorget",
-    ear1="Clearview Earring",
+    ear1="Enervating Earring",
     ear2="Volley Earring",
-    body="Kyujutsugi",
+    body="Orion Jerkin +1",
     hands="Orion Bracers +1",
     ring1="Paqichikaji Ring",
     ring2="Haverton Ring",
     back="Lutian cape",
     waist="Elanid Belt",
     legs="Arcadian Braccae +1",
-    feet="Orion Socks +1"}
+    feet="Amini Bottillons +1"}
   
   -- Coronach Sets Below
   Coronach_Set_Names = {'Normal'}
@@ -120,16 +119,16 @@ function get_sets()
   sets.Coronach.Normal = {    
     head="Arcadian Beret +1",
     neck="Fotia Gorget",
-    ear1="Clearview Earring",
+    ear1="Enervating Earring",
     ear2="Volley Earring",
-    body="Kyujutsugi",
+    body="Orion Jerkin +1",
     hands="Manibozho Gloves",
     ring1="Paqichikaji Ring",
     ring2="Haverton Ring",
     back="Lutian cape",
     waist="Fotia Belt",
     legs="Arcadian Braccae +1",
-    feet="Orion Socks +1"}
+    feet="Amini Bottillons +1"}
   
   -- Last Stand Sets Below
   LS_Set_Names = {'Normal','Acc','Atk'}
@@ -137,16 +136,16 @@ function get_sets()
   sets.LS.Normal = {
     head="Arcadian Beret +1",
     neck="Fotia Gorget",
-    ear1="Clearview Earring",
+    ear1="Enervating Earring",
     ear2="Volley Earring",
-    body="Kyujutsugi",
+    body="Orion Jerkin +1",
     hands="Manibozho Gloves",
     ring1="Paqichikaji Ring",
     ring2="Haverton Ring",
     back="Lutian cape",
     waist="Fotia Belt",
     legs="Arcadian Braccae +1",
-    feet="Orion Socks +1"}
+    feet="Amini Bottillons +1"}
   
   -- Wildfire Sets Below
   WF_Set_Names = {'Normal'}
@@ -164,16 +163,16 @@ function get_sets()
   sets.JR.Normal = {
     head="Arcadian Beret +1",
     neck="Fotia Gorget",
-    ear1="Clearview Earring",
+    ear1="Enervating Earring",
     ear2="Volley Earring",
-    body="Kyujutsugi",
+    body="Orion Jerkin +1",
     hands="Manibozho Gloves",
     ring1="Paqichikaji Ring",
     ring2="Haverton Ring",
     back="Lutian cape",
     waist="Fotia Belt",
     legs="Arcadian Braccae +1",
-    feet="Orion Socks +1"}
+    feet="Amini Bottillons +1"}
   
   -- Sidewinder Sets Below
   SW_Set_Names = {'Normal'}
@@ -181,16 +180,16 @@ function get_sets()
   sets.SW.Normal = {
     head="Arcadian Beret +1",
     neck="Fotia Gorget",
-    ear1="Clearview Earring",
+    ear1="Enervating Earring",
     ear2="Volley Earring",
-    body="Kyujutsugi",
+    body="Orion Jerkin +1",
     hands="Manibozho Gloves",
     ring1="Paqichikaji Ring",
     ring2="Haverton Ring",
     back="Lutian cape",
     waist="Fotia Belt",
     legs="Arcadian Braccae +1",
-    feet="Orion Socks +1"}
+    feet="Amini Bottillons +1"}
   
   -- TP Sets Below(I don't really use for RNG but feel free to add your own)
   TP_Set_Names = {"Normal","PDT","MDT"}
@@ -198,23 +197,23 @@ function get_sets()
   sets.TP['Normal'] = {
     head="Arcadian Beret +1",
     neck="Ocachi Gorget",
-    ear1="Clearview Earring",
+    ear1="Enervating Earring",
     ear2="Volley Earring",
-    body="Kyujutsugi",
+    body="Orion Jerkin +1",
     hands="Manibozho Gloves",
     ring1="Paqichikaji Ring",
     ring2="Haverton Ring",
     back="Lutian cape",
     waist="Elanid Belt",
     legs="Arcadian Braccae +1",
-    feet="Orion Socks +1"}
+    feet="Amini Bottillons +1"}
     
   sets.TP['MDT'] = {
     head="Orion Beret +1",
     neck="Huani collar",
     ear1="Merman's Earring",
     ear2="Merman's Earring",
-    body="Kyujutsugi",
+    body="Orion Jerkin +1",
     hands="Manibozho Gloves",
     ring1="Hajduk ring",
     ring2="Paqichikaji Ring",
@@ -226,9 +225,9 @@ function get_sets()
   sets.TP['PDT'] = {
     head="Whirlpool Mask",
     neck="Twilight Torque",
-    ear1="Clearview Earring",
+    ear1="Enervating Earring",
     ear2="Volley Earring",
-    body="Kyujutsugi",
+    body="Orion Jerkin +1",
     hands="Iuitl Wristbands",
     ring1="Dark Ring",
     ring2="Dark Ring",
@@ -243,30 +242,30 @@ function get_sets()
   sets.Idle.Normal = {
     head="Arcadian Beret +1",
     neck="Ocachi Gorget",
-    ear1="Clearview Earring",
+    ear1="Enervating Earring",
     ear2="Volley Earring",
-    body="Kyujutsugi",
+    body="Orion Jerkin +1",
     hands="Manibozho Gloves",
     ring1="Paqichikaji Ring",
     ring2="Haverton Ring",
     back="Lutian cape",
     waist="Elanid Belt",
     legs="Arcadian Braccae +1",
-    feet="Orion Socks +1"}
+    feet="Amini Bottillons +1"}
             
   sets.Idle.Town = {
     head="Arcadian Beret +1",
     neck="Ocachi Gorget",
-    ear1="Clearview Earring",
+    ear1="Enervating Earring",
     ear2="Volley Earring",
-    body="Kyujutsugi",
+    body="Orion Jerkin +1",
     hands="Manibozho Gloves",
     ring1="Paqichikaji Ring",
     ring2="Haverton Ring",
     back="Lutian cape",
     waist="Elanid Belt",
     legs="Arcadian Braccae +1",
-    feet="Orion Socks +1"}
+    feet="Amini Bottillons +1"}
         
   sets.Idle.Regen = set_combine(sets.Idle.Normal,{
     head="Ocelomeh headpiece +1",
@@ -280,9 +279,9 @@ function get_sets()
   sets.lockstyle = {
     head="Arcadian Beret +1",
     neck="Iqabi necklace",
-    ear1="Clearview Earring",
+    ear1="Enervating Earring",
     ear2="Volley Earring",
-    body="Kyujutsugi",
+    body="Orion Jerkin +1",
     hands="Orion Bracers +1",
     ring1="Hajduk ring",
     ring2="Paqichikaji Ring",
@@ -298,9 +297,9 @@ function get_sets()
   pdt.on = {
     head="Whirlpool Mask",
     neck="Twilight Torque",
-    ear1="Clearview Earring",
+    ear1="Enervating Earring",
     ear2="Volley Earring",
-    body="Kyujutsugi",
+    body="Orion Jerkin +1",
     hands="Iuitl Wristbands",
     ring1="Dark Ring",
     ring2="Dark Ring",
@@ -317,7 +316,7 @@ function get_sets()
   mdt.on = set_combine(pdt.on,{    
     ear1="Merman's Earring",
     ear2="Merman's Earring",
-    body="Kyujutsugi",    
+    body="Orion Jerkin +1",    
     back="Tuilha Cape",
     waist="Resolute Belt"})
   mdt.off = {}  
