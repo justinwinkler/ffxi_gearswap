@@ -97,7 +97,10 @@ function get_sets()
     feet="Amini Bottillons +1"}
   sets.Midshot.RAcc = set_combine(sets.Midshot.Normal,{
     neck="Ej Necklace",
-    hands="Sigyn's Bazubands"
+    hands="Sigyn's Bazubands",
+    legs="Orion Braccae +1",
+    ring1="Hajduk Ring +1",
+    back="Jaeger Mantle"
   })
   sets.Midshot.MaxRAcc = set_combine(sets.Midshot.RAcc,{
     head="Amini Gapette +1"
@@ -491,6 +494,8 @@ function self_command(command)
     add_to_chat(207,'Namas Arrow Set Active: '..NA_Set_Names[NA_Index]..'')
     add_to_chat(207,'Jishnu\'s Radiance Set Active: '..JR_Set_Names[JR_Index]..'')
     add_to_chat(207,'Sidewinder Set Active: '..SW_Set_Names[SW_Index]..'')     
+  elseif command == 'equipmidshot' then
+    equip(sets.Midshot[Midshot_Set_Names[Midshot_Index]])
   end
 end
 
