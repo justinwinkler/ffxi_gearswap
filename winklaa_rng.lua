@@ -63,7 +63,7 @@ function get_sets()
     ring2="Haverton Ring",
     back="Lutian cape",
     waist="Impulse Belt",
-    legs="Nahtirah Trousers",
+    legs="Arc. Braccae +1",
     feet="Wurrukatte Boots"}
     
   -- Magic Sets Below    
@@ -74,7 +74,7 @@ function get_sets()
     ring1="Dark Ring",
     ring2="Dark Ring",
     back="Iximulew Cape",    
-    legs="Nahtirah Trousers",
+    legs="Arc. Braccae +1",
     feet="Iuitl Gaiters"}
   
   sets.precast.Utsusemi = set_combine(sets.precast.FastCast,{neck="Magoraga Beads"})    
@@ -139,7 +139,7 @@ function get_sets()
     ear2="Volley Earring",
     body="Amini Caban +1",
     hands="Manibozho Gloves",
-    ring1="Paqichikaji Ring",
+    ring1="Stormsoul Ring",
     ring2="Haverton Ring",
     back="Lutian cape",
     waist="Fotia Belt",
