@@ -198,26 +198,27 @@ function init_gear_sets()
 	sets.precast.WS['Primal Rend'] = {ammo="Erlene's Notebook",
 		head="Highwing Helm",neck="Stoicheion Medal",ear1="Crematio Earring",ear2="Friomisi Earring",
 		body="Sombra Harness +1",hands="Nilas Gloves",ring1="Acumen Ring",ring2="Fenrir Ring +1",
-		back="Argochampsa Mantle",waist="Salire Belt",legs="Augury Cuisses +1",feet="Sombra Leggings +1"}
+		back="Argocham. Mantle",waist="Salire Belt",legs="Augury Cuisses +1",feet="Sombra Leggings +1"}
 
 	sets.precast.WS['Cloudsplitter'] = set_combine(sets.precast.WS['Primal Rend'], {waist="Thunder Belt"})
 
 	-- PET SIC & READY MOVES
-	sets.midcast.Pet.WS = {main="Kumbhakarna", sub="Izizoeksi", ammo="Demonry Core",
-	        head="Acro Helm",
-		neck="Ferine Necklace",ear1="Sabong Earring",ear2="Domesticator's Earring",
-		body="Mirke Wardecors",hands="Regimen Mittens",ring1="Angel's Ring",ring2="Angel's Ring",
-		back="Pastoralist's Mantle",waist="Hurch'lan Sash",legs="Desultor Tassets",feet="Totemic Gaiters +1"}
+	sets.midcast.Pet.WS = {
+		main="Kerehcatl", sub="Hunahpu",
+	        head="Taeon Chapeau",
+		neck="Ferine Necklace",ear1="Sabong Earring",ear2="Ferine Earring",
+		body="Taeon Tabard",hands="Acro Gauntlets",
+		back="Pastoralist's Mantle",waist="Hurch'lan Sash",legs="Taeon Tights",feet="Acro Leggings"}
 
         sets.midcast.Pet.MagicReady = set_combine(sets.midcast.Pet.WS, {
-                ear1="Diamond Earring",ear2="Diamond Earring",
-                hands="Regimen Mittens",
-                back="Argochampsa Mantle"})
+		main="Kumbhakarna",
+		head="Acro Helm",body="Acro Surcoat",hands="Acro Gauntlets",feet="Taeon Boots",
+                back="Argocham. Mantle"})
 
 	sets.midcast.Pet.Neutral = {head="Totemic Helm +1"}
 	sets.midcast.Pet.Favorable = {head="Ferine Cabasset +2"}
 	sets.midcast.Pet.TPBonus = {hands="Ferine Manoplas +2"}
-	sets.midcast.Pet.ReadyRecast = {main="Kumbhakarna", sub="Charmer's Merlin",legs="Desultor Tassets"}
+	sets.midcast.Pet.ReadyRecast = {main="Izizoeksi", sub="Charmer's Merlin",legs="Desultor Tassets"}
 
         -- RESTING
         sets.resting = {}
@@ -226,7 +227,7 @@ function init_gear_sets()
 	sets.ExtraRegen = {waist="Muscle Belt +1"}
 	sets.WaterRegen = {ear2="Hibernation Earring"}
 
-        sets.idle = {main="Kumbhakarna", sub="Izizoeksi", ammo="Demonry Core",
+        sets.idle = {main="Kerecatl", sub="Hunahpu", ammo="Demonry Core",
 		head="Anwig Salade",neck="Ferine Necklace",ear1="Sabong Earring",ear2="Ferine Earring",
 		body="Acro Surcoat",hands="Acro Gauntlets",ring1="Dark Ring",ring2="Patricius Ring",
 		back="Pastoralist's Mantle",waist="Hurch'lan Sash",legs="Ferine Quijotes +2",feet="Acro Leggings"}
@@ -236,14 +237,15 @@ function init_gear_sets()
 	sets.idle.Reraise = set_combine(sets.idle, {head="Twilight Helm",body="Twilight Mail"})
 
 	sets.idle.Pet = set_combine(sets.idle, {ammo="Demonry Core",
-		head="Anwig Salade",neck="Ferine Necklace",ear1="Sabong Earring",ear2="Ferine Earring",
-		body="Acro Surcoat",hands="Acro Gauntlets",ring1="Dark Ring",ring2="Patricius Ring",
-		back="Pastoralist's Mantle",waist="Hurch'lan Sash",legs="Ferine Quijotes +2",feet="Acro Leggings"})
+		main="Kerehcatl", sub="Hunahpu",
+		head="Anwig Salade",neck="Shepherd's Chain",ear1="Sabong Earring",ear2="Ferine Earring",
+		body="Taeon Tabard",hands="Acro Gauntlets",ring1="Dark Ring",ring2="Patricius Ring",
+		back="Pastoralist's Mantle",waist="Hurch'lan Sash",legs="Taeon Tights",feet="Acro Leggings"})
 
-	sets.idle.Pet.Engaged = {ammo="Demonry Core",
-		head="Anwig Salade",neck="Ferine Necklace",ear1="Sabong Earring",ear2="Ferine Earring",
-		body="Acro Surcoat",hands="Acro Gauntlets",ring1="Dark Ring",ring2="Patricius Ring",
-		back="Pastoralist's Mantle",waist="Hurch'lan Sash",legs="Ferine Quijotes +2",feet="Acro Leggings"}
+	sets.idle.Pet.Engaged = set_combine(sets.idle, {ammo="Demonry Core",
+		head="Anwig Salade",neck="Shepherd's Chain",ear1="Sabong Earring",ear2="Ferine Earring",
+		body="Taeon Tabard",hands="Acro Gauntlets",ring1="Dark Ring",ring2="Patricius Ring",
+		back="Pastoralist's Mantle",waist="Hurch'lan Sash",legs="Taeon Tights",feet="Acro Leggings"})
         
         -- DEFENSE SETS
 	sets.defense.PDT = {head="Ighwa Cap",neck="Twilight Torque",
