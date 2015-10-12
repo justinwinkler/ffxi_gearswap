@@ -153,7 +153,7 @@ function get_sets()
     left_ear="Ethereal Earring",
     right_ear="Moonshade Earring",
     left_ring="Patricius Ring",
-    right_ring="Dark Ring",
+    right_ring="Defending Ring",
     back="Iximulew Cape"}
     
   sets.aftercast.Idle = sets.aftercast.PDT
@@ -170,7 +170,7 @@ function get_sets()
     left_ear="Ethereal Earring",
     right_ear="Moonshade Earring",
     left_ring="Patricius Ring",
-    right_ring="Dark Ring",
+    right_ring="Defending Ring",
     back="Iximulew Cape"}
 
   send_command('input /macro book 3;wait .1;input /macro set 1')
