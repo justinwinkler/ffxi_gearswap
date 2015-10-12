@@ -10,29 +10,29 @@ function get_sets()
   
   -- Precast Sets
   sets.precast.Attack = {
-    main="Venabulum",
+    main="Keraunos",
     sub="Elder's Grip +1",
     ammo="Dosis Tathlum",
     head="Nahtirah Hat",
-    body="Hagondes Coat +1",
-    hands="Hagondes Cuffs +1",
+    body="Count's Garb",
+    hands="Wicce Gloves +1",
     legs="Orvail Pants",
     feet="Umbani Boots",
-    neck="Twilight Torque",
+    neck="Orunmila's Torque",
     waist="Witful Belt",
     left_ear="Loquac. Earring",
     right_ear="Moonshade Earring",
     left_ring="Prolix Ring",
     right_ring="Sangoma Ring",
     back="Swith Cape"}
-    
+
   sets.precast.Cure = {
-    main="Venabulum",
+    main="Keraunos",
     sub="Elder's Grip +1",
     ammo="Dosis Tathlum",
     head="Nahtirah Hat",
     body="Hagondes Coat +1",
-    hands="Hagondes Cuffs +1",
+    hands="Wicce Gloves +1",
     legs="Orvail Pants",
     feet="Umbani Boots",
     neck="Twilight Torque",
@@ -60,34 +60,34 @@ function get_sets()
     waist="Yamabuki-no-Obi",
     left_ear="Loquac. Earring",
     right_ear="Ethereal Earring",
-    left_ring="Dark Ring",
-    right_ring="Dark Ring",
+    left_ring="Patricius Ring",
+    right_ring="Defending Ring",
     back="Iximulew Cape"}
 
   sets.midcast.attack.MAcc = {
-    main="Venabulum",
+    main="Keraunos",
     sub="Elder's Grip +1",
     ammo="Dosis Tathlum",
     head="Nahtirah Hat",
     body="Spae. Coat +1",
-    hands="Bokwus Gloves",
+    hands="Hagondes Cuffs +1",
     legs="Hagondes Pants +1",
-    feet="Umbani Boots",
-    neck="Bokwus Boots",
+    feet="Medium's Sabots",
+    neck="Eddy Necklace",
     waist="Demonry Sash",
-    left_ear="Lifestorm Earring",
-    right_ear="Psystorm Earring",
-    left_ring="Sangoma Ring",
-    right_ring="Angha Ring",
+    left_ear="Friomisi Earring",
+    right_ear="Crematio Earring",
+    left_ring="Acumen Ring",
+    right_ring="Demon's Ring",
     back="Bane Cape"}
 
   sets.midcast.attack.MPSaving = {
-    main="Venabulum",
+    main="Keraunos",
     sub="Elder's Grip +1",
     ammo="Dosis Tathlum",
-    head="Bihu Roundlet +1",
+    head="Hagondes Hat +1",
     body="Spae. Coat +1",
-    hands="Hagondes Cuffs +1",
+    hands="Wicce Gloves +1",
     legs="Hagondes Pants +1",
     feet="Umbani Boots",
     neck="Eddy Necklace",
@@ -99,12 +99,12 @@ function get_sets()
     back="Argochampsa Mantle"}
 
   sets.midcast.attack.MAB = {
-    main="Venabulum",
+    main="Keraunos",
     sub="Elder's Grip +1",
     ammo="Dosis Tathlum",
     head="Hagondes Hat +1",
-    body="Hagondes Coat +1",
-    hands="Hagondes Cuffs +1",
+    body="Count's Garb",
+    hands="Wicce Gloves +1",
     legs="Hagondes Pants +1",
     feet="Umbani Boots",
     neck="Eddy Necklace",
@@ -146,18 +146,18 @@ function get_sets()
     waist="Yamabuki-no-Obi",
     left_ear="Ethereal Earring",
     right_ear="Moonshade Earring",
-    left_ring="Dark Ring",
-    right_ring="Dark Ring",
+    left_ring="Patricius Ring",
+    right_ring="Defending Ring",
     back="Iximulew Cape"}
     
   sets.aftercast.Idle = sets.aftercast.PDT
   
   sets.lockstyle = {
-    main="Venabulum",
+    main="Keraunos",
     sub="Elder's Grip +1",
     ammo="Dosis Tathlum",
     body="Respite Cloak",
-    hands="Hagondes Cuffs +1",
+    hands="Wicce Gloves +1",
     legs="Hagondes Pants +1",
     feet="Umbani Boots",
     neck="Eddy Necklace",
@@ -219,6 +219,10 @@ function job_self_command(cmdParams, eventArgs)
   if cmdParams[1] == 'update' then
     status_change(player.status)
     add_to_chat(207,'Update player status...')
+  elseif cmdParams[1] == 'lockback' then
+    disable('back')
+  elseif cmdParams[1] == 'unlockback' then
+    enable('back')
   end
 end
 
