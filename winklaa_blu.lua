@@ -58,7 +58,8 @@ function job_setup()
     -- Physical spells with Vit stat mod
     blue_magic_maps.PhysicalVit = S{
         'Body Slam','Cannonball','Delta Thrust','Glutinous Dart','Grand Slam',
-        'Power Attack','Quad. Continuum','Sprout Smack','Sub-zero Smash'
+        'Power Attack','Quad. Continuum','Sprout Smack','Sub-zero Smash',
+	'Saurian Slide'
     }
         
     -- Physical spells with Agi stat mod
@@ -94,12 +95,12 @@ function job_setup()
         'Blastbomb','Blazing Bound','Bomb Toss','Cursed Sphere','Dark Orb','Death Ray',
         'Diffusion Ray','Droning Whirlwind','Embalming Earth','Firespit','Foul Waters',
         'Ice Break','Leafstorm','Maelstrom','Rail Cannon','Regurgitation','Rending Deluge',
-        'Retinal Glare','Subduction','Tem. Upheaval','Water Bomb'
+        'Retinal Glare','Subduction','Tem. Upheaval','Water Bomb', 'Spectral Floe','Tenebral Crush'
     }
 
     -- Magical spells with a primary Mnd mod
     blue_magic_maps.MagicalMnd = S{
-        'Acrid Stream','Evryone. Grudge','Magic Hammer','Mind Blast'
+        'Acrid Stream','Evryone. Grudge','Magic Hammer','Mind Blast','Scouring Spate'
     }
 
     -- Magical spells with a primary Chr mod
@@ -109,12 +110,12 @@ function job_setup()
 
     -- Magical spells with a Vit stat mod (on top of Int)
     blue_magic_maps.MagicalVit = S{
-        'Thermal Pulse'
+        'Thermal Pulse','Entomb'
     }
 
     -- Magical spells with a Dex stat mod (on top of Int)
     blue_magic_maps.MagicalDex = S{
-        'Charged Whisker','Gates of Hades'
+        'Charged Whisker','Gates of Hades','Blinding Fulgor','Anvil Lightning','Palling Salvo'
     }
             
     -- Magical spells (generally debuffs) that we want to focus on magic accuracy over damage.
@@ -127,7 +128,8 @@ function job_setup()
         'Geist Wall','Hecatomb Wave','Infrasonics','Jettatura','Light of Penance',
         'Lowing','Mind Blast','Mortal Ray','MP Drainkiss','Osmosis','Reaving Wind',
         'Sandspin','Sandspray','Sheep Song','Soporific','Sound Blast','Stinking Gas',
-        'Sub-zero Smash','Venom Shell','Voracious Trunk','Yawn'
+        'Sub-zero Smash','Venom Shell','Voracious Trunk','Yawn',
+	'Searing Tempest', 'Silent Storm'
     }
         
     -- Breath-based spells
@@ -180,6 +182,7 @@ end
 -- Setup vars that are user-dependent.  Can override this function in a sidecar file.
 function user_setup()
     state.OffenseMode:options('Normal', 'Acc', 'Refresh', 'Learning')
+    state.DefenseMode:options('Physical')
     state.WeaponskillMode:options('Normal', 'Acc')
     state.CastingMode:options('Normal', 'Resistant')
     state.IdleMode:options('Normal', 'PDT', 'Learning')
@@ -236,6 +239,7 @@ function init_gear_sets()
     -- Fast cast sets for spells
     
     sets.precast.FC = {
+	neck="Orunmila's Torque",
         head="Taeon Chapeau",ear1="Loquacious Earring",ear2="Moonshade Earring",
         body="Taeon Tabard",hands="Umuthi Gloves",ring1="Prolix Ring",
         back="Swith Cape",waist="Witful Belt",legs="Orvail Pants",feet="Taeon Boots"}
@@ -351,24 +355,25 @@ function init_gear_sets()
 
     -- Gear for learning spells: +skill and AF hands.
     sets.Learning = {ammo="Mavi Tathlum",hands="Magus Bazubands"}
+    sets.Learning = {back="Mecisto. Mantle"}
 
     sets.latent_refresh = {waist="Fucho-no-obi"}
 
     -- Resting sets
     sets.resting = {
-        neck="Twilight Torque",
-        body="Respite Cloak",hands="Umuthi Gloves",ring1="Patricius Ring",ring2="Dark Ring",
+        head="",neck="Twilight Torque",
+        body="Respite Cloak",hands="Umuthi Gloves",ring1="Defending Ring",ring2="Patricius Ring",
         waist="Yamabuki-no-Obi",feet="Chelona Boots +1"}
     
     -- Idle sets
-    sets.idle = {
-        neck="Twilight Torque",ear1="Ethereal Earring",ear2="Moonshade Earring",
-        body="Respite Cloak",hands="Umuthi Gloves",ring1="Dark Ring",ring2="Patricius Ring",
+    sets.idle = {ammo="Dosis Tathlum",
+        head="",neck="Twilight Torque",ear1="Ethereal Earring",ear2="Moonshade Earring",
+        body="Respite Cloak",hands="Umuthi Gloves",ring1="Defending Ring",ring2="Patricius Ring",
         back="Iximulew Cape",waist="Yamabuki-no-Obi",legs="Taeon Tights",feet="Taeon Boots"}
 
     sets.idle.PDT = {
-        neck="Twilight Torque",ear1="Ethereal Earring",ear2="Moonshade Earring",
-        body="Respite Cloak",hands="Umuthi Gloves",ring1="Dark Ring",ring2="Patricius Ring",
+        head="",neck="Twilight Torque",ear1="Ethereal Earring",ear2="Moonshade Earring",
+        body="Respite Cloak",hands="Umuthi Gloves",ring1="Defending Ring",ring2="Patricius Ring",
         back="Iximulew Cape",waist="Yamabuki-no-Obi",legs="Taeon Tights",feet="Taeon Boots"}
 
     sets.idle.Town = {
@@ -404,10 +409,10 @@ function init_gear_sets()
     sets.engaged.Acc = sets.engaged
 
     sets.engaged.Refresh = set_combine(sets.engaged,
-        {body="Respite Cloak"})
+        {body="Hagondes Coat +1"})
 
     sets.engaged.DW.Refresh = set_combine(sets.engaged,
-        {body="Respite Cloak"})
+        {body="Hagondes Coat +1"})
 
     sets.engaged.Learning = set_combine(sets.engaged, sets.Learning)
     sets.engaged.DW.Learning = set_combine(sets.engaged.DW, sets.Learning)
