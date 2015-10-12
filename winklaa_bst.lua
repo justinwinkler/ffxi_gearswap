@@ -82,7 +82,7 @@ end
 function init_gear_sets()
 	-- PRECAST SETS
         sets.precast.JA['Killer Instinct'] = {head="Ankusa Helm +1"}
-	sets.precast.JA['Bestial Loyalty'] = {hands="Mst. Gloves +2"}
+	sets.precast.JA['Bestial Loyalty'] = {hands="Ankusa Gloves +1"}
 	sets.precast.JA['Call Beast'] = sets.precast.JA['Bestial Loyalty']
         sets.precast.JA.Familiar = {legs="Ankusa Trousers +1"}
 	sets.precast.JA.Tame = {head="Totemic Helm +1",ear1="Tamer's Earring",legs="Stout Kecks"}
@@ -94,9 +94,9 @@ function init_gear_sets()
 		back="Aput Mantle +1",waist="Salire Belt",legs="Iuitl Tights +1",feet="Scamp's Sollerets"}
 
 	sets.precast.JA.Reward = {main="Zoraal Ja's Axe", sub="Zoraal Ja's Axe",
-                head="Stout Bonnet",neck="Aife's Medal",ear1="Ferine Earring",ear2="Lifestorm Earring",
-		body="Totemic Jackcoat +1",hands="Ogre Gloves +1",ring1="Leviathan's Ring +1",ring2="Leviathan's Ring +1",
-		back="Pastoralist's Mantle",waist="Salire Belt",legs="Ankusa Trousers +1",feet="Mst. Gaiters +2"}
+                head="Taeon Chapeau",neck="Aife's Medal",ear1="Lifestorm Earring",ear2="Ferine Earring",
+		body="Tot. Jackcoat +1",hands="Ogre Gloves +1",ring1="Defending Ring",ring2="Patricius Ring",
+		back="Pastoralist's Mantle",waist="Salire Belt",legs="Ankusa Trousers +1",feet="Ankusa Gaiters +1"}
 
 	sets.precast.JA.Charm = {ammo="Tsar's Egg",
 		head="Totemic Helm +1",neck="Unmoving Collar +1",ear1="Enchanter's Earring",ear2="Enchanter Earring +1",
@@ -105,7 +105,7 @@ function init_gear_sets()
 
         -- CURING WALTZ
         sets.precast.Waltz = {ammo="Sonia's Plectrum",
-		head="Ighwa Cap",neck="Unmoving Collar +1",ear1="Handler's Earring",ear2="Handler's Earring +1",
+		head="Ighwa Cap",neck="Unmoving Collar +1",ear1="Handler's Earring +1",ear2="Handler's Earring",
 		body="Gorney Haubert +1",hands="Umuthi Gloves",ring1="Valseur's Ring",ring2="Asklepian Ring",
 		back="Iximulew Cape",waist="Aristo Belt",legs="Osmium Cuisses",feet="Scamp's Sollerets"}
                 
@@ -204,16 +204,17 @@ function init_gear_sets()
 
 	-- PET SIC & READY MOVES
 	sets.midcast.Pet.WS = {
-		main="Kerehcatl", sub="Hunahpu",
+		main="Kerehcatl",sub="Hunahpu",
 	        head="Taeon Chapeau",
-		neck="Ferine Necklace",ear1="Sabong Earring",ear2="Ferine Earring",
-		body="Taeon Tabard",hands="Acro Gauntlets",
-		back="Pastoralist's Mantle",waist="Hurch'lan Sash",legs="Taeon Tights",feet="Acro Leggings"}
+		neck="Empath Necklace",ear1="Sabong Earring",ear2="Ferine Earring",
+		body="Taeon Tabard",hands="Nukumi Manoplas +1",
+		back="Pastoralist's Mantle",waist="Incarnation Sash",legs="Taeon Tights",feet="Acro Leggings"}
 
         sets.midcast.Pet.MagicReady = set_combine(sets.midcast.Pet.WS, {
-		main="Kumbhakarna",
-		head="Acro Helm",body="Acro Surcoat",hands="Acro Gauntlets",feet="Taeon Boots",
-                back="Argocham. Mantle"})
+		main="Kumbhakarna",sub="Kumbhakarna",
+		neck="Empath Necklace",ear1="Handler's Earring +1",ear2="Hija Earring",
+		head="Acro Helm",body="Acro Surcoat",hands="Nukumi Manoplas +1",feet="Taeon Boots",
+		legs="Acro Breeches",back="Argocham. Mantle"})
 
 	sets.midcast.Pet.Neutral = {head="Totemic Helm +1"}
 	sets.midcast.Pet.Favorable = {head="Ferine Cabasset +2"}
@@ -224,44 +225,43 @@ function init_gear_sets()
         sets.resting = {}
         
         -- IDLE SETS
-	sets.ExtraRegen = {waist="Muscle Belt +1"}
-	sets.WaterRegen = {ear2="Hibernation Earring"}
-
-        sets.idle = {main="Kerecatl", sub="Hunahpu", ammo="Demonry Core",
-		head="Anwig Salade",neck="Ferine Necklace",ear1="Sabong Earring",ear2="Ferine Earring",
-		body="Acro Surcoat",hands="Acro Gauntlets",ring1="Dark Ring",ring2="Patricius Ring",
-		back="Pastoralist's Mantle",waist="Hurch'lan Sash",legs="Ferine Quijotes +2",feet="Acro Leggings"}
+        sets.idle = {main="Kumbhakarna", sub="Astolfo", ammo="Demonry Core",
+		head="Anwig Salade",neck="Ferine Necklace",ear1="Handler's Earring +1",ear2="Handler's Earring",
+		body="Taeon Tabard",hands="Taeon Gloves",ring1="Defending Ring",ring2="Patricius Ring",
+		back="Pastoralist's Mantle",waist="Isa Belt",legs="Taeon Tights",feet="Acro Leggings"}
 
         sets.idle.Refresh = set_combine(sets.idle, {head="Wivre Hairpin",body="Twilight Mail",hands="Ogier's Gauntlets",
                 legs="Stearc Subligar",feet="Ogier's Leggings"})
 	sets.idle.Reraise = set_combine(sets.idle, {head="Twilight Helm",body="Twilight Mail"})
 
 	sets.idle.Pet = set_combine(sets.idle, {ammo="Demonry Core",
-		main="Kerehcatl", sub="Hunahpu",
-		head="Anwig Salade",neck="Shepherd's Chain",ear1="Sabong Earring",ear2="Ferine Earring",
-		body="Taeon Tabard",hands="Acro Gauntlets",ring1="Dark Ring",ring2="Patricius Ring",
-		back="Pastoralist's Mantle",waist="Hurch'lan Sash",legs="Taeon Tights",feet="Acro Leggings"})
+		main="Kumbhakarna", sub="Astolfo",
+		head="Anwig Salade",neck="Empath Necklace",ear1="Handler's Earring +1",ear2="Handler's Earring",
+		body="Taeon Tabard",hands="Taeon Gloves",ring1="Defending Ring",ring2="Patricius Ring",
+		back="Pastoralist's Mantle",waist="Isa Belt",legs="Taeon Tights",feet="Acro Leggings"})
 
 	sets.idle.Pet.Engaged = set_combine(sets.idle, {ammo="Demonry Core",
-		head="Anwig Salade",neck="Shepherd's Chain",ear1="Sabong Earring",ear2="Ferine Earring",
-		body="Taeon Tabard",hands="Acro Gauntlets",ring1="Dark Ring",ring2="Patricius Ring",
-		back="Pastoralist's Mantle",waist="Hurch'lan Sash",legs="Taeon Tights",feet="Acro Leggings"})
+		main="Kumbhakarna", sub="Astolfo",
+		head="Anwig Salade",neck="Shepherd's Chain",ear1="Handler's Earring +1",ear2="Handler's Earring",
+		body="Taeon Tabard",hands="Taeon Gloves",ring1="Defending Ring",ring2="Patricius Ring",
+		back="Pastoralist's Mantle",waist="Isa Belt",legs="Taeon Tights",feet="Acro Leggings"})
         
         -- DEFENSE SETS
 	sets.defense.PDT = {head="Ighwa Cap",neck="Twilight Torque",
-		body="Emet Harness +1",hands="Iuitl Wristbands +1",ring1="Dark Ring",ring2="Defending Ring",
+		body="Emet Harness +1",hands="Iuitl Wristbands +1",ring1="Defending Ring",ring2="Defending Ring",
 		back="Repulse Mantle",waist="Flume Belt +1",legs="Iuitl Tights +1",feet="Iuitl Gaiters +1"}
 
         sets.defense.PetPDT = {ammo="Demonry Core",
-		head="Anwig Salade",neck="Shepherd's Chain",ear1="Handler's Earring",ear2="Handler's Earring +1",
-		body="Ankusa Jackcoat +1",hands="Ankusa Gloves +1",ring1="Dark Ring",ring2="Defending Ring",
-		back="Oneiros Cappa",waist="Isa Belt",legs="Ferine Quijotes +2",feet="Ankusa Gaiters +1"}
+		main="Kumbhakarna", sub="Astolfo",
+		head="Anwig Salade",neck="Shepherd's Chain",ear1="Handler's Earring +1",ear2="Handler's Earring",
+		body="Ankusa Jackcoat +1",hands="Ankusa Gloves +1",ring1="Defending Ring",ring2="Defending Ring",
+		back="Oneiros Cappa",waist="Isa Belt",legs="Taeon Tights",feet="Ankusa Gaiters +1"}
 
 	sets.defense.Killer = set_combine(sets.defense.PDT, {body="Ferine Gausape +2"})
 	sets.defense.Reraise = set_combine(sets.defense.PDT, {head="Twilight Helm",body="Twilight Mail"})
 
 	sets.defense.MDT = set_combine(sets.defense.PDT, {ammo="Vanir Battery",
-		head="Iuitl Headgear +1",ear1="Merman's Earring",ear2="Sanare Earring",
+		head="Iuitl Headgear +1",ear1="Handler's Earring +1",ear2="Handler's Earring",
 		body="Savas Jawshan",
 		back="Engulfer's Cape +1",waist="Nierenschutz"})
 
@@ -573,12 +573,6 @@ end
 -------------------------------------------------------------------------------------------------------------------
 
 function customize_idle_set(idleSet)
-	if player.hpp < 50 and pet.status ~= 'Engaged' then
-		idleSet = set_combine(idleSet, sets.ExtraRegen)
-	end
-	if world.day_element == 'Water' then
-		idleSet = set_combine(idleSet, sets.WaterRegen)
-	end
 	return idleSet
 end
 
@@ -611,6 +605,11 @@ function job_handle_equipping_gear(playerStatus, eventArgs)
 	else
 		enable('back')
 	end
+	if player.equipment.waist == 'Chaac Belt' then
+	  disable('waist')
+        else
+	  enable('waist')
+        end
 end
 
 function status_change(new,old)
